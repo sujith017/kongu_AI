@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot in JavaScript | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts Link For Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <input type="checkbox" id="check" checked> <!-- Added checked attribute -->
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFx9Bo9cAQPO-VgJUGEMGQvfOfYqPQGbr8g&s" alt="logo" style="border-radius: 5%;width:50px;height:50px;margin-top:10px">
+        KONGU AI</header>
+      <a href="#" class="active" id="ai1"> <!-- Added id "ai1" -->
+        <i class="fas fa-qrcode"></i>
+        <span>AI 1</span>
+      </a>
+      <a href="#" id="ai2"> <!-- Added id "ai2" -->
+        <i class="fas fa-link"></i>
+        <span>AI 2</span>
+      </a>
+      <a href="#" id="ai3"> <!-- Added id "ai3" -->
+        <i class="fas fa-stream"></i>
+        <span>AI 3</span>
+      </a>
+    </div>
+    <div class="logo-button" onclick="goToLoginPage()">
+        <p>Login</p>
+    </div>
+  <!-- <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">close</span>
+  </button> -->
+  <div class="chatbot">
+    <header>
+      <h2 style="color: white;">Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+  <script>
+    function goToLoginPage() {
+        window.location.href = 'login.html'; 
+    }
+</script>
+</body>
+<div>
+    <div class="frame">
+        <img src="https://www.kongu.ac.in/webalbum/img/kec.JPG" alt="Kongu AI Image" style="width:800px;height: 500px;"> <!-- Replace "image.jpg" with the path to your image -->
+    </div>  
+</div>
+</html>
